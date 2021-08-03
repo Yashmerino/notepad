@@ -39,6 +39,8 @@ void MainWindow::on_actionOpen_triggered() // If open file button clicked
         QString textFile = inputText.readAll();
 
         ui->textbox->setText(textFile);
+
+        file.close();
     };
 }
 
@@ -86,3 +88,27 @@ void MainWindow::on_actionRedo_triggered() // If redo button clicked
     ui->textbox->redo();
 }
 
+
+void MainWindow::on_actionSave_as_triggered() // If save as button clicked
+{
+    QString file_name = QFileDialog::getSaveFileName(this, "Save as");
+    QFile file(file_name);
+
+    if(!file.open(QFile::WriteOnly | QFile::Text)) // If cannot write file then error
+    {
+        QMessageBox::warning(this, "Error", "Cannot save file: " + file.errorString());
+    }
+    else // Else set window title to the file name and save the file with text from textbox widget
+    {
+        notepad.currentFile_name = file_name;
+        setWindowTitle(file_name);
+
+        QTextStream outputFile(&file);
+
+        QString textFromBox = ui->textbox->toPlainText();
+
+        outputFile << textFromBox;
+
+        file.close();
+    }
+}
