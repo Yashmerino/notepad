@@ -49,3 +49,16 @@ void MainWindow::on_actionNew_triggered() // If new button clicked
     ui->textbox->clear();
 }
 
+
+void MainWindow::on_actionExit_triggered() // If exit button clicked
+{
+    QMessageBox::StandardButton reply;
+
+    reply = QMessageBox::question(this, "Notepad", "Are you sure?", QMessageBox::Yes | QMessageBox::No); // Creating a prompt box
+
+    if(reply == QMessageBox::Yes) // If user clicked yes then quit application
+    {
+        qApp->quit();
+    }
+}
+
