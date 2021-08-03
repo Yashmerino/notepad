@@ -27,6 +27,8 @@ private slots:
 
     void on_actionPaste_triggered();
 
+    void on_actionUndo_triggered();
+
 private:
     Ui::MainWindow *ui;
     Notepad notepad;

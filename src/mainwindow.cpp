@@ -74,3 +74,9 @@ void MainWindow::on_actionPaste_triggered() // If paste button clicked
     ui->textbox->paste();
 }
 
+
+void MainWindow::on_actionUndo_triggered() // If undo button clicked
+{
+    ui->textbox->undo();
+}
+
