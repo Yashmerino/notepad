@@ -80,3 +80,9 @@ void MainWindow::on_actionUndo_triggered() // If undo button clicked
     ui->textbox->undo();
 }
 
+
+void MainWindow::on_actionRedo_triggered() // If redo button clicked
+{
+    ui->textbox->redo();
+}
+
