@@ -68,3 +68,9 @@ void MainWindow::on_actionCopy_triggered() // If copy button clicked
     ui->textbox->copy();
 }
 
+
+void MainWindow::on_actionPaste_triggered() // If paste button clicked
+{
+    ui->textbox->paste();
+}
+
