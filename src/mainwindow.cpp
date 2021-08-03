@@ -19,7 +19,7 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_actionOpen_triggered()
+void MainWindow::on_actionOpen_triggered() // If open file button clicked
 {
     QString file_name = QFileDialog::getOpenFileName(this, "Open a file"); // Get open file name
     QFile file(file_name);
@@ -40,5 +40,12 @@ void MainWindow::on_actionOpen_triggered()
 
         ui->textbox->setText(textFile);
     };
+}
+
+
+void MainWindow::on_actionNew_triggered() // If new button clicked
+{
+    notepad.currentFile_name.clear();
+    ui->textbox->clear();
 }
 
