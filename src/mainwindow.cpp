@@ -62,3 +62,9 @@ void MainWindow::on_actionExit_triggered() // If exit button clicked
     }
 }
 
+
+void MainWindow::on_actionCopy_triggered() // If copy button clicked
+{
+    ui->textbox->copy();
+}
+
