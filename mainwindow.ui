@@ -14,18 +14,14 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPlainTextEdit" name="textbox">
+   <widget class="QTextEdit" name="textbox">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>40</x>
       <y>20</y>
-      <width>751</width>
+      <width>721</width>
       <height>491</height>
      </rect>
-    </property>
-    <property name="plainText">
-     <string>Type here...
-</string>
     </property>
    </widget>
   </widget>

@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     src/main.cpp \
-    src/mainwindow.cpp
+    src/mainwindow.cpp \
+    src/notepad.cpp
 
 HEADERS += \
-    headers/mainwindow.h
+    headers/mainwindow.h \
+    headers/notepad.h
 
 FORMS += \
     mainwindow.ui
