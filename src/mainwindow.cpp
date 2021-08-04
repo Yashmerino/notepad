@@ -3,6 +3,8 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QPrinter>
+#include <QPrintDialog>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -112,3 +114,21 @@ void MainWindow::on_actionSave_as_triggered() // If save as button clicked
         file.close();
     }
 }
+
+void MainWindow::on_actionPrint_triggered() // If print button clicked
+{
+    QPrinter printer;
+    printer.setPrinterName("Printer");
+
+    QPrintDialog printerDialog(&printer, this);
+
+    if(printerDialog.exec() == QDialog::Rejected)
+    {
+        QMessageBox::warning(this, "Error", "Cannot access printer");
+    }
+    else
+    {
+        ui->textbox->print(&printer);
+    }
+}
+

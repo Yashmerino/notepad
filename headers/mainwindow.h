@@ -33,6 +33,8 @@ private slots:
 
     void on_actionSave_as_triggered();
 
+    void on_actionPrint_triggered();
+
 private:
     Ui::MainWindow *ui;
     Notepad notepad;
