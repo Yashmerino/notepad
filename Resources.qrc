@@ -4,5 +4,6 @@
         <file>img/open.png</file>
         <file>img/save as.png</file>
         <file>img/exit.png</file>
+        <file>img/print.png</file>
     </qresource>
 </RCC>
