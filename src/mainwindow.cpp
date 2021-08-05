@@ -168,3 +168,9 @@ void MainWindow::on_action36_triggered() // If font size button pressed ---
     ui->textbox->setFontPointSize(36);
 }
 
+
+void MainWindow::on_actionCut_triggered() // If cut button pressed
+{
+    ui->textbox->cut();
+}
+
