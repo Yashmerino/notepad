@@ -28,7 +28,6 @@ void MainWindow::on_actionOpen_triggered() // If open file button clicked
 
     notepad.currentFile_name = file_name;
 
-
     if(!file.open(QIODevice::ReadOnly | QFile::Text)) // If can't read file then error
     {
         QMessageBox::warning(this, "Error", "Cannot open file: " + file.errorString());
@@ -130,5 +129,42 @@ void MainWindow::on_actionPrint_triggered() // If print button clicked
     {
         ui->textbox->print(&printer);
     }
+}
+
+
+void MainWindow::on_action6_triggered() // If font size button pressed V
+{
+    ui->textbox->setFontPointSize(6);
+}
+
+
+
+void MainWindow::on_action12_triggered()
+{
+    ui->textbox->setFontPointSize(12);
+}
+
+
+void MainWindow::on_action18_triggered()
+{
+    ui->textbox->setFontPointSize(18);
+}
+
+
+void MainWindow::on_action24_triggered()
+{
+    ui->textbox->setFontPointSize(24);
+}
+
+
+void MainWindow::on_action30_triggered()
+{
+    ui->textbox->setFontPointSize(30);
+}
+
+
+void MainWindow::on_action36_triggered() // If font size button pressed ---
+{
+    ui->textbox->setFontPointSize(36);
 }
 

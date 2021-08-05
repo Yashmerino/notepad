@@ -35,6 +35,18 @@ private slots:
 
     void on_actionPrint_triggered();
 
+    void on_action6_triggered();
+
+    void on_action12_triggered();
+
+    void on_action18_triggered();
+
+    void on_action24_triggered();
+
+    void on_action30_triggered();
+
+    void on_action36_triggered();
+
 private:
     Ui::MainWindow *ui;
     Notepad notepad;

@@ -53,8 +53,26 @@
     <addaction name="actionUndo"/>
     <addaction name="actionRedo"/>
    </widget>
+   <widget class="QMenu" name="menuFont">
+    <property name="title">
+     <string>Font</string>
+    </property>
+    <widget class="QMenu" name="menuSize">
+     <property name="title">
+      <string>Size</string>
+     </property>
+     <addaction name="action6"/>
+     <addaction name="action12"/>
+     <addaction name="action18"/>
+     <addaction name="action24"/>
+     <addaction name="action30"/>
+     <addaction name="action36"/>
+    </widget>
+    <addaction name="menuSize"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
+   <addaction name="menuFont"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -136,6 +154,36 @@
    </property>
    <property name="text">
     <string>Print</string>
+   </property>
+  </action>
+  <action name="action6">
+   <property name="text">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action12">
+   <property name="text">
+    <string>12</string>
+   </property>
+  </action>
+  <action name="action18">
+   <property name="text">
+    <string>18</string>
+   </property>
+  </action>
+  <action name="action24">
+   <property name="text">
+    <string>24</string>
+   </property>
+  </action>
+  <action name="action30">
+   <property name="text">
+    <string>30</string>
+   </property>
+  </action>
+  <action name="action36">
+   <property name="text">
+    <string>36</string>
    </property>
   </action>
  </widget>
