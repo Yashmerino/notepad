@@ -48,6 +48,7 @@
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionCut"/>
     <addaction name="actionCopy"/>
     <addaction name="actionPaste"/>
     <addaction name="actionUndo"/>
@@ -90,6 +91,12 @@
    <addaction name="actionSave_as"/>
    <addaction name="actionPrint"/>
    <addaction name="actionExit"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionCut"/>
   </widget>
   <action name="actionNew">
    <property name="icon">
@@ -128,21 +135,37 @@
    </property>
   </action>
   <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/copy.png</normaloff>:/img/img/copy.png</iconset>
+   </property>
    <property name="text">
     <string>Copy</string>
    </property>
   </action>
   <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/paste.png</normaloff>:/img/img/paste.png</iconset>
+   </property>
    <property name="text">
     <string>Paste</string>
    </property>
   </action>
   <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/undo.png</normaloff>:/img/img/undo.png</iconset>
+   </property>
    <property name="text">
     <string>Undo</string>
    </property>
   </action>
   <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/redo.png</normaloff>:/img/img/redo.png</iconset>
+   </property>
    <property name="text">
     <string>Redo</string>
    </property>
@@ -184,6 +207,15 @@
   <action name="action36">
    <property name="text">
     <string>36</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/img/img/cut.png</normaloff>:/img/img/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
    </property>
   </action>
  </widget>

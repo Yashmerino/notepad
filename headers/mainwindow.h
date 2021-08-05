@@ -47,6 +47,8 @@ private slots:
 
     void on_action36_triggered();
 
+    void on_actionCut_triggered();
+
 private:
     Ui::MainWindow *ui;
     Notepad notepad;
